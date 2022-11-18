@@ -1,0 +1,148 @@
+@media (max-width:400px){
+    .formContainer{
+        width: 90%;
+        padding: 20px;
+        margin: 50px 20px;
+    }
+
+    .formInput{
+        width: 90%;
+    }
+    
+    .formError{
+        width: 90%;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.formContainer{
+    width: fit-content;
+    background-color: #fff;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.formContainer h2{
+    color: #1a73e8;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+.formField label{
+    color: rgb(85, 85, 85);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.formField span{
+    width: fit-content;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.175);
+    font-size: 0.7rem;
+    margin-top: 5px;
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+.formInput{
+    width: 300px;
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 0 10px;
+    transition: all 0.2s ease-in;
+}
+
+.formError{
+    width: 300px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 0 10px;
+    transition: all 0.2s ease-in;
+}
+
+.formInput:focus,
+.formError:focus{
+    height: 30px;
+    border: 1px solid #1a73e8;
+    outline: 0;
+}
+
+.checkboxContainer{
+    display: flex;
+    align-items: center;
+    
+}
+
+.checkboxContainer label{
+    color: #1a73e8;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.checkboxContainer input{
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    border: 1px solid #1a73e8;
+    border-radius: 5px;
+    appearance: none;
+    transition: all 0.2s ease-in;
+}
+
+.checkboxContainer input:checked{
+    border-radius: 50%;
+    background-color: #1a73e8;
+}
+
+.checkboxContainer input:focus{
+    border: 2px solid #004aaa;
+}
+
+.formButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formButtons a{
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.1s ease-in;
+}
+
+.formButtons a:hover{
+    color: #004aaa;
+}
+
+.formButtons button{
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.formButtons button:hover{
+    background-color: #004aaa;
+}
